@@ -10,7 +10,7 @@ function sendMessage(player: ServerPlayer, message: string) {
     packet.dispose();
 }
 
-command.register('enc', 'Enchant item in specified slot').overload((param, origin)=>{
+command.register("enc", "Enchant item in specified slot").overload((param, origin)=>{
     let player = origin.getEntity() as ServerPlayer;
     let permissionLevel = player.getPermissionLevel();
     if (permissionLevel !== 2) {
